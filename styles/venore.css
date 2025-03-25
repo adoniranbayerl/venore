@@ -1,0 +1,210 @@
+/*
+* Me importa em globalscss
+* @import "../venore/venore.css";
+* 
+* Esse arquivo está uma bagunça, perdão pelo vacilo.
+*/
+
+/*
+* Composition
+
+A classe scrolled é atribuida ao <html> quando o scroll da janela for maior que 50.
+*/
+
+/* Geral */
+/* Essa classe controla a distância que os elementos que levam ela ficam do <header>.  */
+.after-top-pt {
+  @apply lg:pt-40 print:pt-3;
+}
+.scrolled .after-top-pt {
+  @apply lg:pt-28 print:pt-3;
+}
+.after-top-pt-mobile {
+  @apply pt-40 print:pt-3;
+}
+.global-px-full {
+  @apply px-4 lg:px-6;
+}
+
+/* Header */
+#header {
+  @apply z-50 flex print:hidden w-full flex-1 items-center justify-between transition-all duration-200 ease-in-out shadow-md shadow-black/20 dark:border-b;
+}
+.header-full {
+  @apply h-30  bg-background text-secondary-foreground;
+}
+.header-boxed {
+  @apply h-26 bg-primary text-primary-foreground;
+}
+.scrolled .header-full {
+  @apply h-[4.4rem] bg-primary text-primary-foreground;
+}
+
+/* Sidebar Mobile */
+.sidebar-mobile {
+  @apply w-full fixed bottom-0 z-50 bg-primary text-primary-foreground;
+}
+
+/* Sidebar Left */
+#leftbar {
+  @apply transition-all duration-300 ease-in-out overflow-hidden lg:space-y-8 dark:border-r;
+}
+.leftbar-boxed {
+  @apply lg:pt-[4.4rem] border-l;
+}
+.leftbar-full {
+  @apply fixed lg:left-0 lg:top-0 lg:h-full lg:z-40;
+}
+.leftbar-expanded {
+  @apply lg:w-[12rem] lg:bg-background lg:text-secondary-foreground lg:shadow-[0_0_15px_rgba(0,0,0,0.15)];
+}
+.scrolled .leftbar-expanded {
+  @apply lg:bg-secondary;
+}
+.leftbar-collapsed {
+  @apply lg:w-[4.4rem] lg:bg-secondary lg:text-primary-foreground lg:shadow-[0_0_10px_rgba(0,0,0,0.28)];
+}
+.mainmenu {
+  @apply flex flex-col;
+}
+.mainmenu-button {
+  @apply flex flex-col gap-4 bg-transparent text-foreground hover:bg-primary hover:text-background items-center justify-start py-3 lg:flex-row lg:py-6 lg:ps-[1.6rem] rounded-none w-full cursor-pointer;
+}
+#sidebar-toggle {
+  @apply cursor-pointer rounded-sm w-8 h-8 flex justify-center items-center;
+}
+.sidebar-toggle-expanded {
+  @apply bg-primary text-primary-foreground;
+}
+.sidebar-toggle-collapsed {
+  @apply bg-secondary text-secondary-foreground;
+}
+
+/* Sidebar right */
+#rightbar {
+  @apply hidden bg-secondary lg:block w-[18rem] transition-all duration-300 ease-in-out overflow-auto lg:space-y-6 dark:border-l;
+}
+.rightbar-full {
+  @apply fixed lg:right-0 lg:top-0 lg:h-full lg:z-40;
+}
+.contextual-expanded {
+}
+.contextual-collapsed {
+}
+
+/* Main Content */
+#main-content {
+  @apply bg-background min-h-screen flex flex-col gap-6 text-foreground grow transition-all duration-300 ease-in-out lg:me-[18rem] lg:pb-20;
+}
+.main-expanded {
+  @apply lg:ms-[13rem];
+}
+.main-collapsed {
+  @apply lg:ms-[5.5em];
+}
+
+/* Footer */
+#footer-content {
+  @apply flex gap-3 h-48 justify-between bg-secondary pb-12 lg:p-12 text-secondary-foreground transition-all duration-300 ease-in-out z-50 lg:me-[18rem];
+}
+.footer-expanded {
+  @apply lg:ms-[12rem];
+}
+.footer-collapsed {
+  @apply lg:ms-[4.4em];
+}
+.footer-segment {
+  @apply w-full;
+}
+
+/*
+   * Navigation
+   */
+/* Main Navigation */
+#navmain {
+  @apply grid grid-flow-col text-nowrap lg:grid-flow-row lg:gap-0;
+}
+#navmain-item {
+  @apply flex flex-col items-center py-3 lg:flex-row lg:space-x-4 lg:py-3 lg:ps-[1.5rem];
+}
+.navmain-expanded {
+}
+.navmain-collapsed {
+}
+
+/*User Navigation*/
+.navuser-memnubar {
+  @apply border-0 bg-transparent p-0 shadow-none;
+}
+.navuser-avatar {
+  @apply h-10 w-10;
+}
+.navuser-display-name {
+  @apply text-left text-xs md:flex md:flex-col;
+}
+.navuser-text {
+  @apply text-foreground/50 dark:text-foreground/75;
+}
+.scrolled .navuser-text {
+  @apply lg:text-background/70;
+}
+
+/*
+   * Components
+   */
+/* Logo */
+.logo {
+  @apply w-32;
+}
+.scrolled .logo {
+  @apply w-24;
+}
+.logo-footer {
+  @apply w-44;
+}
+
+/* Notifications */
+.notification-global {
+  @apply mb-6 flex items-center space-x-10 rounded-lg p-6 lg:p-12;
+}
+.notification-global-icon {
+  @apply h-16 w-16;
+}
+.notification-global-button {
+  @apply mt-3 bg-transparent p-3 shadow-md;
+}
+.notification-local {
+  @apply bg-info rounded-md text-info-foreground p-3 space-y-3;
+}
+
+/*
+   * Elementos que estou usando no NEST
+   */
+
+section {
+  @apply space-y-3;
+}
+#dashboard {
+  @apply space-y-12;
+}
+.carousel-container {
+  @apply py-12;
+}
+.section-dashboard {
+}
+.section-name {
+  @apply text-sm text-foreground/50;
+}
+
+@layer base {
+  .print {
+    @apply hidden;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
