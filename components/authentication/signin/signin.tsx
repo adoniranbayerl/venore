@@ -1,8 +1,7 @@
-/* Hooks */
-import { checkSession } from "@/lib/session";
+import { getSession } from "@/lib/session";
 import { SigninLayout } from "./signin.layout";
 
-export async function SignInPage() {
-  const session = await checkSession();
+export async function signInPage() {
+  const session = await getSession();
   return <SigninLayout session={session} />;
 }

@@ -1,10 +1,6 @@
 import { cn } from "@/lib/utils";
-
-/* Hooks */
 import { useStore } from "@/hooks/useStore";
 import { useSidebarToggle } from "@/hooks/useSidebarToggle";
-
-/* Navegação */
 
 export default function Footer({
   children,

@@ -1,6 +1,4 @@
 import { cn } from "@/lib/utils";
-
-/* Configuração */
 import { compositionConfig, headerConfig } from "./layout.config";
 
 export default function Header({

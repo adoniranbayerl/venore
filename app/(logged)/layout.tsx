@@ -85,10 +85,12 @@ export default function LoggedLayout({
               <div className="footer-segment border-l border-background ps-8 py-3">
                 <BrandLogo className="logo-footer " defaultPath />
                 <div className="text-background">
-                  Venore é uma aplicação web moderna usando Next.js, NextAuth,
-                  Tailwind CSS e Drizzle ORM, oferecendo autenticação, navegação
-                  dinâmica, UI responsiva e componentes reutilizáveis para uma
-                  experiência fluida.
+                  <p>
+                    Venore é uma aplicação web moderna usando Next.js, NextAuth,
+                    Tailwind CSS e Drizzle ORM, oferecendo autenticação,
+                    navegação dinâmica, UI responsiva e componentes
+                    reutilizáveis para uma experiência fluida.
+                  </p>
                 </div>
               </div>
             </div>
