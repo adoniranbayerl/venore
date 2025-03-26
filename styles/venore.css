@@ -70,6 +70,14 @@ A classe scrolled é atribuida ao <html> quando o scroll da janela for maior que
 .mainmenu-button {
   @apply flex flex-col gap-4 bg-transparent text-foreground hover:bg-primary hover:text-background items-center justify-start py-3 lg:flex-row lg:py-6 lg:ps-[1.6rem] rounded-none w-full cursor-pointer;
 }
+.sitemap {
+}
+.sitemap-title {
+  @apply font-bold mb-2;
+}
+.sitemap-link {
+  @apply text-xs mb-1 text-foreground/75;
+}
 #sidebar-toggle {
   @apply cursor-pointer rounded-sm w-8 h-8 flex justify-center items-center;
 }
@@ -105,7 +113,7 @@ A classe scrolled é atribuida ao <html> quando o scroll da janela for maior que
 
 /* Footer */
 #footer-content {
-  @apply flex gap-3 h-48 justify-between bg-secondary pb-12 lg:p-12 text-secondary-foreground transition-all duration-300 ease-in-out z-50 lg:me-[18rem];
+  @apply flex text-sm justify-between bg-secondary text-secondary-foreground transition-all duration-300 ease-in-out z-50 lg:me-[18rem];
 }
 .footer-expanded {
   @apply lg:ms-[12rem];
@@ -114,7 +122,13 @@ A classe scrolled é atribuida ao <html> quando o scroll da janela for maior que
   @apply lg:ms-[4.4em];
 }
 .footer-segment {
-  @apply w-full;
+  @apply space-y-6;
+}
+#f01 {
+  @apply w-4/5 p-24 bg-primary;
+}
+#f02 {
+  @apply w-full p-24;
 }
 
 /*

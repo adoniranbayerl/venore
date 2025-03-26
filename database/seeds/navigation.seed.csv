@@ -1,0 +1,5 @@
+id,type,sectionname,order,label,href,icon
+3eea89d8-690f-4675-bebb-a8a2a82fd0f1,usernav,Conta,3,Suporte,/account/support,MdChatBubble
+55fa3579-b02e-4301-905b-9407052562a0,mainnav,Relatórios,1,Painel,/dashboard,MdSpaceDashboard
+aaec8bce-040e-420d-baa8-5d20fa6e74fb,usernav,Conta,1,Meu Perfil,/account/profile,
+f0d80aaf-e632-46b5-828f-0cb49e7e1f35,usernav,Conta,2,Configurações,/account/settings,

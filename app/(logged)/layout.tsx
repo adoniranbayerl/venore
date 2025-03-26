@@ -21,6 +21,7 @@ import BrandLogo from "@/components/brandlogo";
 import UserDrop from "@/components/userdrop";
 import MainMenu from "@/components/mainmenu";
 import Footer from "@/layout/footer";
+import { SiteMap } from "@/components/navigation/sitemap/sitemap";
 
 export default function LoggedLayout({
   children,
@@ -77,17 +78,22 @@ export default function LoggedLayout({
               <MainMenu />
             </Leftbar>
             <Main> {children}</Main>
-            <RightBar>RightBar</RightBar>
+            <RightBar>{null}</RightBar>
           </div>
           <Footer>
             <div id="f01" className="footer-segment">
-              Segment 01
+              <div className="footer-segment border-l border-background ps-8 py-3">
+                <BrandLogo className="logo-footer " defaultPath />
+                <div className="text-background">
+                  Venore é uma aplicação web moderna usando Next.js, NextAuth,
+                  Tailwind CSS e Drizzle ORM, oferecendo autenticação, navegação
+                  dinâmica, UI responsiva e componentes reutilizáveis para uma
+                  experiência fluida.
+                </div>
+              </div>
             </div>
             <div id="f02" className="footer-segment">
-              Segment 02
-            </div>
-            <div id="f03" className="footer-segment">
-              Segment 03
+              <SiteMap />
             </div>
           </Footer>
         </div>

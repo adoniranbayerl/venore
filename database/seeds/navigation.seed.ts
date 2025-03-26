@@ -1,13 +1,7 @@
-// No futuro vou jogar isso para schema.tsx
-// Basicamente aqui eu coloco o href da rota e o nome que deve aparecer no site. A key é a rota.
-export const routeprops = {
-  account: { label: "Conta", href: "/account" },
-  dashboard: { label: "Painel", href: "/dashboard" },
-  profile: { label: "Meu perfil", href: "/account/profile" },
-  settings: { label: "Configurações", href: "/account/settings" },
-  support: { label: "Suporte", href: "/account/support" },
-};
-export const navigation = [
+import { db } from "@/database/db";
+import { navigation } from "@/database/schema";
+
+export const navigationSeed = [
   {
     id: "3eea89d8-690f-4675-bebb-a8a2a82fd0f1",
     type: "usernav",
@@ -45,3 +39,12 @@ export const navigation = [
     icon: null,
   },
 ];
+async function seed() {
+  try {
+    await db.insert(navigation).values(navigationSeed);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+seed();

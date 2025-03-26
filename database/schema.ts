@@ -117,6 +117,7 @@ export const notifications = pgTable("notification", {
 export const navigation = pgTable("navigation", {
   id: uuid("id").defaultRandom().primaryKey().notNull(),
   type: text("type").notNull(),
+  sectionname: text("sectionname").notNull(),
   order: integer("order").notNull(),
   label: text("label").notNull(),
   href: text("href").notNull(),

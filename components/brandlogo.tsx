@@ -24,16 +24,18 @@ export default function BrandLogo(LogoProps: LogoProps) {
   }
 
   return (
-    <Link href="/">
-      <Image
-        src={defaultPath ? "/logo.svg" : logoPath}
-        alt="Logo"
-        width={w || 0}
-        height={h || 0}
-        sizes="100vw"
-        className={cn("transition-all duration-200 ease-in-out", className)}
-        priority
-      />
-    </Link>
+    <div>
+      <Link href="/">
+        <Image
+          src={defaultPath ? "/logo.svg" : logoPath}
+          alt="Logo"
+          width={w || 0}
+          height={h || 0}
+          sizes="100vw"
+          className={cn("transition-all duration-200 ease-in-out", className)}
+          priority
+        />
+      </Link>
+    </div>
   );
 }

@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Venore
 
-## Getting Started
+## Descrição do Projeto
 
-First, run the development server:
+Venore é uma aplicação web que oferece uma interface de usuário moderna e responsiva. A aplicação é construída utilizando o framework Next.js e integra autenticação via NextAuth. Além disso, a aplicação utiliza o Tailwind CSS para estilização e Drizzle ORM para gerenciamento de banco de dados.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Autenticação**: Login com email e social (Google, Microsoft).
+- **Navegação Dinâmica**: Menu de navegação principal e de usuário com suporte a expandir/colapsar.
+- **Layout Responsivo**: Adaptação para diferentes tamanhos de tela com uso de Tailwind CSS.
+- **Componentes Reutilizáveis**: Inclusão de vários componentes de UI como cards, breadcrumbs e menus.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estrutura do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **components**: Contém os componentes reutilizáveis de UI e navegação.
+- **styles**: Arquivos CSS para a estilização da aplicação.
+- **database**: Configurações e esquemas do banco de dados utilizando Drizzle ORM.
+- **lib**: Funções utilitárias e handlers de redirecionamento.
+- **hooks**: Custom hooks para funcionalidades específicas, como manipulação de sidebar.
 
-## Learn More
+## Configuração
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone o repositório:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/adoniranbayerl/venore.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Instale as dependências:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Configure as variáveis de ambiente no arquivo `.env`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Execute a aplicação em modo de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+## Tecnologias Utilizadas
+
+- **Next.js**: Framework React para desenvolvimento de aplicações web.
+- **NextAuth**: Biblioteca de autenticação para Next.js.
+- **Tailwind CSS**: Framework CSS para estilização.
+- **Drizzle ORM**: ORM para gerenciamento de banco de dados PostgreSQL.
+- **React Icons**: Biblioteca de ícones para React.
