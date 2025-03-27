@@ -36,9 +36,9 @@ export default function LoggedLayout({
 
   useEffect(() => {
     if (status === "unauthenticated") {
-      //router.push("/signin?push=" + pathname);
+      router.push("/signin?push=" + pathname);
     } else if (status === "authenticated") {
-      //router.push("/dashboard");
+      router.push("/dashboard");
     }
   }, [status, router, pathname]);
 
@@ -82,9 +82,9 @@ export default function LoggedLayout({
           </div>
           <Footer>
             <div id="f01" className="footer-segment">
-              <div className="footer-segment border-l border-background ps-8 py-3">
-                <BrandLogo className="logo-footer " defaultPath />
-                <div className="text-background">
+              <div className="footer-segment border-l-6 border-primary-foreground ps-8 py-3">
+                <BrandLogo className="logo-footer invert" defaultPath />
+                <div>
                   <p>
                     Venore é uma aplicação web moderna usando Next.js, NextAuth,
                     Tailwind CSS e Drizzle ORM, oferecendo autenticação,

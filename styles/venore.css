@@ -128,7 +128,7 @@ A classe scrolled é atribuida ao <html> quando o scroll da janela for maior que
   @apply space-y-6;
 }
 #f01 {
-  @apply w-4/5 p-24 bg-primary;
+  @apply w-4/5 p-24 bg-primary text-primary-foreground;
 }
 #f02 {
   @apply w-full p-24;

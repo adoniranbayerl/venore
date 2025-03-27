@@ -6,6 +6,9 @@
 
 Venore é uma aplicação web que oferece uma interface de usuário moderna e responsiva. A aplicação é construída utilizando o framework Next.js e integra autenticação via NextAuth. Além disso, a aplicação utiliza o Tailwind CSS para estilização e Drizzle ORM para gerenciamento de banco de dados.
 
+Ainda tem um monte de coisa por fazer, componentes para criar, códigos para refatorar, etc.
+Uma hora eu vou escrever uma documentação para explicar tudo isso.
+
 ## Funcionalidades
 
 - **Autenticação**: Login com email e social (Google, Microsoft).
