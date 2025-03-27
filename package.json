@@ -1,6 +1,6 @@
 {
-  "name": "venore1.0.0-gasut",
-  "version": "0.1.0",
+  "name": "venore",
+  "version": "1.0.0-gasut",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -6,6 +6,7 @@ import { useSidebarToggle } from "@/hooks/useSidebarToggle";
 
 /* Navegação */
 import NavigationBreadcrumbs from "@/components/navigation/breadcrumbs";
+import GlobalNotification from "@/components/notifications/globalnotifications";
 
 export default function Main({
   children,
@@ -20,6 +21,7 @@ export default function Main({
       )}
     >
       <NavigationBreadcrumbs />
+      <GlobalNotification />
       <div>{children}</div>
     </main>
   );

@@ -1,4 +1,6 @@
-# Venore
+# Venore 1.0.0@Gasut
+
+@adoniransbayerl
 
 ## Descrição do Projeto
 

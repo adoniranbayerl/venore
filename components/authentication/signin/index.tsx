@@ -1,3 +1,3 @@
-import { SignInPage } from "./signin";
+import { signInPage } from "./signin";
 
-export default SignInPage;
+export default signInPage;

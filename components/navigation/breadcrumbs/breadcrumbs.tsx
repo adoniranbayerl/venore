@@ -1,5 +1,5 @@
 import { HomeIcon } from "lucide-react";
-import { BreadcrumbsItems } from "./breadcrumbs.data";
+import { BreadcrumbsItems } from "./breadcrumbs.items";
 import {
   Breadcrumb,
   BreadcrumbLink,

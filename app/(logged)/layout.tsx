@@ -63,7 +63,7 @@ export default function LoggedLayout({
               <BrandLogo
                 className={cn(
                   "logo dark:invert",
-                  scrolled && "invert dark:invert-0"
+                  scrolled && "invert dark:invert"
                 )}
                 defaultPath
               />

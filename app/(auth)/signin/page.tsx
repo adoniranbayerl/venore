@@ -1,3 +1,3 @@
-import SignInPage from "@/components/authentication/signin";
-const Page = SignInPage;
+import signInPage from "@/components/authentication/signin";
+const Page = signInPage;
 export default Page;

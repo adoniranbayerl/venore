@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 
 /* Configuração */
 import { rightbarConfig } from "./layout.config";
+import { LocalNotification } from "@/components/notifications/localnotifications/localnotifications";
 
 export default function RightBar({
   children,
@@ -15,6 +16,7 @@ export default function RightBar({
         rightbarConfig.fixed && "rightbar-full"
       )}
     >
+      <LocalNotification />
       {children}
     </aside>
   );

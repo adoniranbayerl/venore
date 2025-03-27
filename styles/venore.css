@@ -25,13 +25,16 @@ A classe scrolled é atribuida ao <html> quando o scroll da janela for maior que
 .global-px-full {
   @apply px-4 lg:px-6;
 }
+.section-title {
+  @apply text-sm font-bold;
+}
 
 /* Header */
 #header {
-  @apply z-50 flex print:hidden w-full flex-1 items-center justify-between transition-all duration-200 ease-in-out shadow-md shadow-black/20 dark:border-b;
+  @apply z-50 flex print:hidden w-full flex-1 items-center justify-between transition-all duration-200 ease-in-out shadow-md shadow-black/20 dark:shadow-black/50 dark:shadow-lg dark:border-b dark:border-primary/30;
 }
 .header-full {
-  @apply h-30  bg-background text-secondary-foreground;
+  @apply h-30 bg-background text-secondary-foreground;
 }
 .header-boxed {
   @apply h-26 bg-primary text-primary-foreground;
@@ -47,7 +50,7 @@ A classe scrolled é atribuida ao <html> quando o scroll da janela for maior que
 
 /* Sidebar Left */
 #leftbar {
-  @apply transition-all duration-300 ease-in-out overflow-hidden lg:space-y-8 dark:border-r;
+  @apply transition-all duration-300 ease-in-out overflow-hidden lg:space-y-8 dark:border-r dark:border-secondary;
 }
 .leftbar-boxed {
   @apply lg:pt-[4.4rem] border-l;
@@ -79,7 +82,7 @@ A classe scrolled é atribuida ao <html> quando o scroll da janela for maior que
   @apply text-xs mb-1 text-foreground/75;
 }
 #sidebar-toggle {
-  @apply cursor-pointer rounded-sm w-8 h-8 flex justify-center items-center;
+  @apply cursor-pointer rounded-sm w-8 h-8 flex justify-center items-center shadow-[0_0_15px_rgba(0,0,0,0.15)];
 }
 .sidebar-toggle-expanded {
   @apply bg-primary text-primary-foreground;
@@ -90,7 +93,7 @@ A classe scrolled é atribuida ao <html> quando o scroll da janela for maior que
 
 /* Sidebar right */
 #rightbar {
-  @apply hidden bg-secondary lg:block w-[18rem] transition-all duration-300 ease-in-out overflow-auto lg:space-y-6 dark:border-l;
+  @apply hidden bg-secondary lg:block w-[18rem] transition-all duration-300 ease-in-out overflow-auto lg:space-y-6;
 }
 .rightbar-full {
   @apply fixed lg:right-0 lg:top-0 lg:h-full lg:z-40;
@@ -160,7 +163,7 @@ A classe scrolled é atribuida ao <html> quando o scroll da janela for maior que
   @apply text-foreground/50 dark:text-foreground/75;
 }
 .scrolled .navuser-text {
-  @apply lg:text-background/70;
+  @apply lg:text-primary-foreground;
 }
 
 /*
@@ -188,7 +191,7 @@ A classe scrolled é atribuida ao <html> quando o scroll da janela for maior que
   @apply mt-3 bg-transparent p-3 shadow-md;
 }
 .notification-local {
-  @apply bg-info rounded-md text-info-foreground p-3 space-y-3;
+  @apply rounded-md p-3 space-y-3;
 }
 
 /*
